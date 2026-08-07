@@ -20,6 +20,48 @@
 - Implemented and refined the application iteratively based on the PRD and design specifications.
 - Customized and extended the generated code to satisfy the assessment requirements.
 
+## How to Run the Project
+
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm (v9 or higher)
+
+### 1. Install Dependencies
+Run the unified dependency installer from the root directory:
+```bash
+npm run install-deps
+```
+*(Or install manually in both folders: `cd server && npm install` and `cd client && npm install`)*
+
+### 2. Run in Development Mode
+You can start both backend and frontend development servers concurrently:
+
+- **Run Server (Backend API - Port 5000)**:
+  ```bash
+  cd server
+  npm start
+  ```
+
+- **Run Client (React Frontend - Port 3000)**:
+  ```bash
+  cd client
+  npm run dev
+  ```
+
+Open `http://localhost:3000` in your browser.
+
+### 3. Run Production Build (Unified Single Server)
+To build and run the complete full-stack application under a single server instance:
+```bash
+# Build the production bundle
+npm run build
+
+# Start the unified server (serves API & static React app on port 5000)
+npm start
+```
+
+Access the application at `http://localhost:5000`.
+
 ## Functional Validation
 The following features were implemented and verified:
 
