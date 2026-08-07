@@ -5,7 +5,7 @@ import CategoryChecklist from './CategoryChecklist';
 import PriceRangeSlider from './PriceRangeSlider';
 import RatingRadioGroup from './RatingRadioGroup';
 import { RotateCcw, X, SlidersHorizontal } from 'lucide-react';
-import { backdropVariants, drawerLeft, spring } from '../../lib/motion';
+import { backdropVariants, drawerLeft, slideInLeft, spring } from '../../lib/motion';
 
 export default function FilterSidebar({
   filters,

@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Trash2, Plus, Minus, ShoppingBag, ArrowRight, CheckCircle2 } from 'lucide-react';
-import { backdropVariants, drawerRight, spring } from '../lib/motion';
+import { backdropVariants, drawerRight, fadeUp, spring, staggerContainer } from '../lib/motion';
 
 export default function CartDrawer({
   isOpen,

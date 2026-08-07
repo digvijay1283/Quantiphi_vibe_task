@@ -1,0 +1,15 @@
+{
+  "name": "quantiphi-vibe-ecommerce",
+  "version": "1.0.0",
+  "description": "Full-Stack E-Commerce Multi-Filter Sidebar Application",
+  "main": "server/server.js",
+  "scripts": {
+    "install-deps": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run install-deps && npm run build --prefix client",
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm start --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
