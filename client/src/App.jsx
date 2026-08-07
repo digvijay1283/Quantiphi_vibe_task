@@ -6,8 +6,8 @@ import ProductGrid from './components/ProductGrid/ProductGrid';
 import SortDropdown from './components/SortDropdown/SortDropdown';
 import CartDrawer from './components/CartDrawer';
 import { useProductFilters } from './hooks/useProductFilters';
-import { X, AlertCircle, Star } from 'lucide-react';
-import { EASE, fadeUp, pillVariants, spring, staggerContainer } from './lib/motion';
+import { X, AlertCircle, Star, ArrowUpRight } from 'lucide-react';
+import { EASE, fadeUp, pillVariants, revealOnScroll, spring, staggerContainer } from './lib/motion';
 
 export default function App() {
   const {

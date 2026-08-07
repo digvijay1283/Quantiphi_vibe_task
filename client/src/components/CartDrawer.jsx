@@ -27,7 +27,7 @@ export default function CartDrawer({
             className="absolute inset-0 bg-ink-950/50 backdrop-blur-sm"
           />
 
-          <div className="fixed inset-y-0 right-0 flex max-w-full pl-10">
+          <div className="fixed inset-y-0 right-0 flex w-full max-w-full justify-end">
             <motion.div
               variants={drawerRight}
               initial="hidden"
@@ -39,10 +39,10 @@ export default function CartDrawer({
               onDragEnd={(_, info) => {
                 if (info.offset.x > 80) onClose();
               }}
-              className="panel flex w-screen max-w-md flex-col justify-between border-l shadow-float"
+              className="panel flex w-full sm:w-[420px] lg:w-[35vw] flex-col justify-between border-l border-line shadow-float"
             >
               {/* Header */}
-              <div className="flex items-center justify-between border-b border-line p-6">
+              <div className="flex items-center justify-between border-b border-line p-4 sm:p-6">
                 <div className="flex items-center gap-3">
                   <div className="grid h-10 w-10 place-items-center rounded-2xl bg-invert text-invert-fg">
                     <ShoppingBag className="h-[18px] w-[18px] stroke-[1.75]" />
@@ -65,7 +65,7 @@ export default function CartDrawer({
               </div>
 
               {/* Items */}
-              <div className="flex-1 overflow-y-auto p-6">
+              <div className="flex-1 overflow-y-auto p-4 sm:p-6">
                 {cartItems.length === 0 ? (
                   <motion.div
                     variants={staggerContainer}
@@ -174,7 +174,7 @@ export default function CartDrawer({
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="space-y-4 overflow-hidden border-t border-line bg-elevated/40 p-6"
+                    className="space-y-4 overflow-hidden border-t border-line bg-elevated/40 p-4 sm:p-6"
                   >
                     <div className="space-y-2 text-[12px]">
                       <div className="flex justify-between text-muted">

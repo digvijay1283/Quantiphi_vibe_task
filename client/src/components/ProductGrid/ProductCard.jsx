@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ShoppingBag, Check } from 'lucide-react';
 import { cardVariants, spring } from '../../lib/motion';
 
-export default function ProductCard({ product, index = 0, onAddToCart }) {
+const ProductCard = React.forwardRef(({ product, index = 0, onAddToCart }, ref) => {
   const [added, setAdded] = useState(false);
 
   const handleAddToCart = () => {
@@ -16,6 +16,7 @@ export default function ProductCard({ product, index = 0, onAddToCart }) {
 
   return (
     <motion.div
+      ref={ref}
       layout
       custom={index}
       variants={cardVariants}
@@ -112,4 +113,8 @@ export default function ProductCard({ product, index = 0, onAddToCart }) {
       </div>
     </motion.div>
   );
-}
+});
+
+ProductCard.displayName = 'ProductCard';
+
+export default ProductCard;
