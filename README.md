@@ -4,6 +4,8 @@ A full-stack e-commerce browsing interface built with **React (Vite)**, **Tailwi
 
 Features real-time combinatorial product filtering (categories, dual-handle price range, star ratings), live backend sorting, active filter pills, search bar, dark/light theme toggle, sticky filter sidebar, and an interactive shopping cart drawer.
 
+> 🌐 **Live Frontend Deployment**: [https://quantiphi-vibe-task.vercel.app/](https://quantiphi-vibe-task.vercel.app/) *(Frontend standalone mode using static JSON dataset. Run the Express backend locally for live API operations).*
+
 ---
 
 ## 🛠️ Tech Stack

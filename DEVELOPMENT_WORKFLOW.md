@@ -1,5 +1,7 @@
 # Vibe Coding Assessment – Development Workflow
 
+> 🌐 **Live Frontend Deployment**: [https://quantiphi-vibe-task.vercel.app/](https://quantiphi-vibe-task.vercel.app/) *(Frontend standalone mode using static JSON dataset. Run the Express backend locally for live API operations).*
+
 ## Requirement Analysis
 - Read and understood the complete problem statement.
 - Broke down the functional and non-functional requirements.
