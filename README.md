@@ -65,6 +65,9 @@ npm start
 
 Open `http://localhost:5000` in your browser.
 
+> **Note on Standalone Client-Side Deployment**:
+> For static client-only hosting (e.g. Vercel or Netlify without backend), the app includes an embedded JSON fallback (`client/src/data/mockProducts.json`). If the Express API is unavailable, the application automatically runs in **Client-Side Standalone Demo Mode** with complete multi-filtering and sorting functionality. To connect to the live Express API, run the backend server as outlined above.
+
 ---
 
 ## 📁 Project Structure

@@ -62,6 +62,9 @@ npm start
 
 Access the application at `http://localhost:5000`.
 
+> **Note on Standalone Client-Side Deployment**:
+> For static client-only hosting (e.g. Vercel, Netlify, or GitHub Pages), the frontend includes an embedded JSON dataset fallback (`client/src/data/mockProducts.json`). If the Express backend server is offline or unavailable, the application automatically runs in **Client-Side Standalone Mode** with full multi-filtering functionality. To enable live Express backend API calls, run the backend server as described above.
+
 ## Functional Validation
 The following features were implemented and verified:
 
